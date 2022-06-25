@@ -1,7 +1,6 @@
-from socket import fromshare
 from django import forms
 
-class RevierForm(forms.Form):
+class ReviewForm(forms.Form):
     name = forms.CharField(
         label='Name',
         mine_length=4,
