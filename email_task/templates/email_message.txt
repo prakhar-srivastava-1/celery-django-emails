@@ -1,0 +1,7 @@
+Hello {{name|safe}},
+
+Thank you for your review. Here is a copy:
+{{review|safe}}
+
+Thanks and Regards,
+Team Review
