@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Review Form
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid" id="main">
+        <div class="row no-gutter">
+            <div class="col-6 bg-light">
+                <div class="review d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-8 mx-auto">
+                                <p class="h4 mb-4 font-weight-bold">Write a Review</p>
+                                <form action="" method="POST" class="form-control border-0">
+                                    {% csrf_token %}
+                                    {{ form.as_p }}
+                                    <button type="submit" class="btn btn-dark btn-block py-2 mb-4 mt-5 font-weight-bold">Submit Review</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+            <div class="col-md-6 d-flex expand">
+                <!-- Right hand side image -->
+            </div>
+        </div>
+    </div>    
+    
+{% endblock %}
