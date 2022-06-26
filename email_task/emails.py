@@ -29,11 +29,10 @@ def send_review_email(name, email, review):
     email_body = render_to_string("email_message.txt", context)
 
     email = EmailMessage(
-        email_subject,
-        email_body,
-        # Source Email
-        EMAIL_ID,
-        # Target Email - format as per Django doc
+        email_subject, email_body,
+        #source email
+        settings.DEFAULT_FROM_EMAIL, 
+        #target email
         [email, ],
     )
 
